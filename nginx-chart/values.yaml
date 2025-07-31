@@ -1,0 +1,21 @@
+# Default values for nginx-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# This will set the replicaset count
+replicaCount: 2
+
+# This sets the container image
+image:
+  repository: nginx
+  # This sets the pull policy for images.
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+ # This is for setting up a service
+service:
+  # This sets the service type
+  type: NodePort
+  # This sets the ports
+  port: 80

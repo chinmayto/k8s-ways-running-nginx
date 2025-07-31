@@ -1,0 +1,2 @@
+1. Get the application URL by running this commands:
+  minikube service {{ .Release.Name }}-service --url
